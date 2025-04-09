@@ -1,0 +1,24 @@
+@use '../../../app/sass-central/' as *;
+.stack{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.xs {
+    gap: $space-xs;
+}
+.s {
+    gap: $space-s;
+}
+.m {
+    gap: $space;
+}
+.l {
+    gap: $space-l;
+}
+.xl {
+    gap: $space-xl;
+}
+.x11{
+    gap: $space-11x;
+}

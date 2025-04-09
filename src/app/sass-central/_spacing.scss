@@ -1,0 +1,19 @@
+//Using a base 8 spacing structure.
+
+$base: 0.8rem;
+
+$space-xs: $base/2; // 4
+$space-s: $base; // 8
+$space: $base * 2; // 16
+$space-l: $base * 3; // 24
+$space-xl: $base * 4; // 32
+$space-xxl: $base * 5; // 40
+$space-xxxl: $base * 6; // 48
+$space-4x: $base * 7; // 56
+$space-5x: $base * 8; // 64
+$space-6x: $base * 9; // 72
+$space-7x: $base * 10; // 80
+$space-8x: $base * 11; // 88
+$space-9x: $base * 12; // 96
+$space-10x: $base * 13; // 104
+$space-11x: $base * 14; // 112

@@ -1,0 +1,13 @@
+$font-ratio: 1.2;
+$font-size: 1.6rem; //ONE POINT SIX
+
+$font-size-s: $font-size / $font-ratio; //  1.3rem
+$font-size-xs: $font-size-s / $font-ratio; // 1.11rem
+$font-size-l: $font-size * $font-ratio; //1.92rem
+$font-size-xl: $font-size-l * $font-ratio; //2.304rem
+$font-size-2xl: $font-size-xl * $font-ratio; //2.765rem
+$font-size-3xl: $font-size-2xl * $font-ratio; //3.318rem
+//New font sizes
+$font-size-4xl: $font-size-3xl * $font-ratio * $font-ratio; //4.7775
+$font-size-5xl: $font-size-4xl * $font-ratio * $font-ratio; //6.8rem
+$font-size-6xl: $font-size-5xl * $font-ratio //8.25rem

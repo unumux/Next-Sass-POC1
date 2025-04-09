@@ -1,0 +1,16 @@
+@use '../../../app/sass-central/' as *;
+.h1 {
+    background-color: orange;
+    font-size: 48px;
+}
+.h2 {
+    background-color: pink;
+    font-size: 36px;
+}
+.h3 {
+    background-color: lightblue;
+    font-size: 30px;
+}
+.p {
+    background-color: lightgreen;
+}
