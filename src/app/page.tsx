@@ -48,12 +48,8 @@ export default function Home() {
             </Text>
             <Text myHtml="h3">Text: myHtml=h3</Text>
             <Text>
-              Random:{" "}
-              <blockquote>
-                Use text-wrap: balance; on headings and subheadings. And use text-wrap: pretty; on paragraphs of text to
-                get rid of orphans on the last line.
-              </blockquote>{" "}
-              Do you agree?{" "}
+              Random: Use text-wrap: balance; on headings and subheadings. And use text-wrap: pretty; on paragraphs of
+              text to get rid of orphans on the last line. Do you agree?{" "}
             </Text>
           </div>
         </Stack>
