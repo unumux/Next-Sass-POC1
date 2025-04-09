@@ -4,11 +4,14 @@ import Stack from "./components/stack/stack";
 import Button from "./components/button/button";
 import Link from "next/link";
 import Text from "./components/text/text";
+import Example from "./components/example/example";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+
+        <Example/>
 
       <Stack gap="x11">
         <div>
