@@ -20,4 +20,3 @@ Good YouTube video on using SASS with React:
 [https://www.youtube.com/watch?v=kFA-ZJ9KTqs](https://www.youtube.com/watch?v=kFA-ZJ9KTqs)
 
 I'm using a css reset from [https://www.joshwcomeau.com/css/custom-css-reset/](https://www.joshwcomeau.com/css/custom-css-reset/)
-

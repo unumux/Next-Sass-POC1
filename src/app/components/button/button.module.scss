@@ -1,62 +1,62 @@
-@use '../../../app/sass-central/' as *;
+@use "../../../app/sass-central/" as *;
 
 .button {
-    background-color: $UnumBlue;
-    color: white;
-    font-weight: 600;
-    padding: 1.2rem 2.4rem;
-    cursor: pointer;
-    border-radius: 100px;
-    text-decoration: none;
-    display: inline-block;
-    border: 1px $UnumBlue solid;
-    text-align: center;
+  background-color: $UnumBlue;
+  color: white;
+  font-weight: 600;
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+  border-radius: 100px;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px $UnumBlue solid;
+  text-align: center;
 
-    &:hover{
-        background-color: #004470;
-    }
+  &:hover {
+    background-color: #004470;
+  }
 }
 
 .primary {
-    background-color: $UnumBlue;
-    border: 1px $UnumBlue solid;
+  background-color: $UnumBlue;
+  border: 1px $UnumBlue solid;
 
-    &:hover{
-        background-color: #004470;
-    }
+  &:hover {
+    background-color: #004470;
+  }
 }
 
-.secondary{
-    background-color: $Gold;
-    border: 1px $Gold solid;
-    color: $UnumBlue_4;
+.secondary {
+  background-color: $Gold;
+  border: 1px $Gold solid;
+  color: $UnumBlue_4;
 
-    &:hover{
-        background-color: $Orange_1;
-        border: 1px $Orange_1 solid;
-    }
+  &:hover {
+    background-color: $Orange_1;
+    border: 1px $Orange_1 solid;
+  }
 }
 
-.green{
-    background-color: $odd-green-1;
-    border: 1px $odd-green-1 solid;
+.green {
+  background-color: $odd-green-1;
+  border: 1px $odd-green-1 solid;
 
-    &:hover{
-        background-color: $odd-green-2;
-        border: 1px $odd-green-2 solid;
-    }
+  &:hover {
+    background-color: $odd-green-2;
+    border: 1px $odd-green-2 solid;
+  }
 }
 
-.disabled{
+.disabled {
+  background-color: #bdc3c7;
+  border: 1px #bdc3c7 solid;
+  color: black;
+  cursor: not-allowed;
+
+  &:hover {
     background-color: #bdc3c7;
     border: 1px #bdc3c7 solid;
     color: black;
     cursor: not-allowed;
-
-    &:hover{
-        background-color: #bdc3c7;
-        border: 1px #bdc3c7 solid;
-        color: black;
-        cursor: not-allowed;
-    }
+  }
 }
