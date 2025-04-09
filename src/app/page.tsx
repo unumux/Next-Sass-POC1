@@ -20,9 +20,12 @@ export default function Home() {
             <Button>primary</Button>
             <Button variant="secondary">secondary</Button>
             <Button variant="green">green</Button>
-            <Button variant="disabled">disabled</Button>
+            <Button isDisabled={true}>primary (disabled)</Button>
             <Button asChild>
               <Link href="./">link</Link>
+            </Button>
+            <Button asChild isDisabled={true}>
+              <Link href="./">link (disabled)</Link>
             </Button>
           </div>
 
@@ -31,9 +34,12 @@ export default function Home() {
             <Button>primary</Button>
             <Button variant="secondary">secondary</Button>
             <Button variant="green">green</Button>
-            <Button variant="disabled">disabled</Button>
+            <Button isDisabled={true}>primary (disabled)</Button>
             <Button asChild>
               <Link href="./">link</Link>
+            </Button>
+            <Button asChild isDisabled={true}>
+              <Link href="./">link (disabled)</Link>
             </Button>
           </Stack>
 

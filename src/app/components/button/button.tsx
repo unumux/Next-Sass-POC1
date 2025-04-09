@@ -5,25 +5,27 @@ type BaseButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 type ButtonProps = BaseButtonProps & {
   asChild?: boolean;
-  variant?: "primary" | "secondary" | "green" | "disabled";
+  variant?: "primary" | "secondary" | "green";
+  isDisabled?: boolean;
+  children?: React.ReactNode;
 };
 
-export default function Button({ asChild, variant = "primary", ...props }: ButtonProps) {
+export default function Button({ asChild, variant = "primary", isDisabled, ...props }: ButtonProps) {
   const Comp = asChild ? Slot : "button";
   const isButton = Comp === "button";
   const variantStyles = {
     primary: styles.primary,
     secondary: styles.secondary,
     green: styles.green,
-    disabled: styles.disabled,
   };
+  const disabledStyles = isDisabled ? styles.disabled : "";
 
   return (
     <Comp
       type={isButton ? "button" : undefined}
-      tabIndex={!isButton && variant === "disabled" ? -1 : undefined}
-      className={`button ${styles.button} ${variantStyles[variant]}`}
+      className={`button ${styles.button} ${variantStyles[variant]} ${disabledStyles}`}
       {...props}
+      tabIndex={isDisabled ? -1 : undefined}
     />
   );
 
