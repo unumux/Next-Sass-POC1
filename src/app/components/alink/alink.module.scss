@@ -1,0 +1,10 @@
+@use "../../../app/sass-central/" as *;
+
+.alink {
+  color: blue;
+  text-decoration: double;
+  display: inline-block;
+  &:hover {
+    color: purple;
+  }
+}

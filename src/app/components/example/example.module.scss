@@ -1,4 +1,14 @@
+@use "../../../app/sass-central/" as *;
+@use "../../../app/sass-central/colonial/colors" as cla;
+@use "../../../app/sass-central/unum/colors" as unm;
+
 .blarg {
-  background-color: yellow;
+  background-color: $myColor;
   border: 1px black solid;
+}
+.cla {
+  background-color: cla.$myColor;
+}
+.unm {
+  background-color: unm.$myColor;
 }

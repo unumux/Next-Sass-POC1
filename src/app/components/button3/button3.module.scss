@@ -1,0 +1,137 @@
+@use "../../../app/sass-central/" as *;
+
+.button {
+  grid-column: 1 /1;
+  grid-row: 1 / 1;
+  background-color: $UnumBlue;
+  border: 1px $UnumBlue solid;
+  color: white;
+  display: inline-flex;
+  font-weight: 600;
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+  border-radius: 100px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+
+  &:hover {
+    background-color: $UnumBlue_4;
+    border: 1px $UnumBlue_4 solid;
+    color: white;
+  }
+  //   &:focus-visible {
+  //     outline: 1px inset deeppink;
+  //   }
+  & a:link,
+  & a:visited {
+    background-color: $UnumBlue;
+    border: 1px $UnumBlue solid;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $UnumBlue_4;
+      border: 1px $UnumBlue_4 solid;
+      color: white;
+      text-decoration: none;
+    }
+  }
+  &[data-loading] {
+    cursor: wait;
+    opacity: 0.5;
+  }
+}
+
+.secondary {
+  background-color: $Gold;
+  border: 1px $Gold solid;
+  color: $UnumBlue_4;
+
+  &:hover {
+    background-color: $Orange_1;
+    border: 1px $Orange_1 solid;
+    color: $UnumBlue_4;
+  }
+
+  & a:link,
+  & a:visited {
+    background-color: $Gold;
+    border: 1px $Gold solid;
+    color: $UnumBlue_4;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $Orange_1;
+      border: 1px $Orange_1 solid;
+      color: $UnumBlue_4;
+      text-decoration: none;
+    }
+  }
+}
+
+.disabled {
+  background-color: #bdc3c7;
+  border: 1px #bdc3c7 solid;
+  color: black;
+  cursor: not-allowed;
+
+  &:hover {
+    background-color: #bdc3c7;
+    border: 1px #bdc3c7 solid;
+    color: black;
+    cursor: not-allowed;
+  }
+
+  & a:link,
+  & a:visited {
+    background-color: #bdc3c7;
+    border: 1px #bdc3c7 solid;
+    color: black;
+    cursor: not-allowed;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #bdc3c7;
+      border: 1px #bdc3c7 solid;
+      color: black;
+      cursor: not-allowed;
+      text-decoration: none;
+    }
+  }
+}
+
+.loading_grid {
+  display: inline-grid;
+  grid: 1fr / auto-flow;
+}
+/* HTML: <div class="loader"></div> */
+// https://css-loaders.com/spinner/
+// https://www.youtube.com/watch?v=HrrZA4GmGCw - Add Variants and Loading to your Button! Build a React Component Library with Tailwind CSS & Next.js
+// https://dockyard.com/blog/2020/03/02/accessible-loading-indicatorswith-no-extra-elements
+// https://www.bekk.christmas/post/2023/24/accessible-loading-button
+// https://dockyard.com/blog/2020/03/02/accessible-loading-indicatorswith-no-extra-elements
+.loader {
+  grid-column: 1 /1;
+  grid-row: 1 / 1;
+  place-self: center;
+  scale: 0.7;
+  pointer-events: none;
+  // above is new testing
+  width: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: white; //#25b09b
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
