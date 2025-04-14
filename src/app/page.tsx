@@ -8,6 +8,7 @@ import Example from "./components/example/example";
 import Alink from "./components/alink/alink";
 import Button2 from "./components/button2/button2";
 import Button3 from "./components/button3/button3";
+import Reftest from "./components/reftest/reftest";
 
 export default function Home() {
   return (
@@ -61,6 +62,8 @@ export default function Home() {
               <a href="http://www.firefox.com">button3 link (disabled)</a>
             </Button3>
             <Button3 isLoading={true}>button3</Button3>
+
+            <Reftest></Reftest>
           </div>
         </Stack>
 

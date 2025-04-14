@@ -9,12 +9,17 @@ type ButtonProps = BaseButtonProps & {
   asChild?: boolean;
   variant?: "secondary" | "green";
   isLoading?: boolean;
+  buttonRef?: React.Ref<HTMLButtonElement> | React.Ref<HTMLAnchorElement>;
   children?: React.ReactNode;
 };
 
-export default function Button({ asChild, variant, isLoading = false, ...props }: ButtonProps) {
+export default function Button3({ asChild, variant, isLoading = false, buttonRef, ...props }: ButtonProps) {
   const Comp = asChild ? Slot : "button";
   const isButton = Comp === "button";
+
+  // if (buttonRef) {
+  //   console.log("buttonRef:", buttonRef);
+  // }
 
   let ourClasses = styles.button;
   if (variant) {
@@ -32,6 +37,7 @@ export default function Button({ asChild, variant, isLoading = false, ...props }
           type={isButton ? "button" : undefined}
           className={ourClasses}
           {...props}
+          ref={buttonRef as React.Ref<any>}
           tabIndex={!isButton && props.disabled ? -1 : undefined}
           data-loading="true"
         />
@@ -46,6 +52,7 @@ export default function Button({ asChild, variant, isLoading = false, ...props }
       type={isButton ? "button" : undefined}
       className={ourClasses}
       {...props}
+      ref={buttonRef as React.Ref<any>}
       tabIndex={!isButton && props.disabled ? -1 : undefined}
     />
   );
